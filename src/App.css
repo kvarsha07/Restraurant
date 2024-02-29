@@ -44,11 +44,19 @@
 .header{
   display: flex;
   justify-content: space-between;
-  border: 1px solid black;
+  border: 1px solid white;
 }
-.logo{
+.logo {
   width: 100px;
+ 
+  transition: width 0.3s, height 0.3s; /* Add transition property for width and height */
 }
+
+.logo:hover {
+  width: 50px;
+  height: 100px;
+}
+
 
 .nav-item {
   padding: 0px 20px ;
@@ -64,16 +72,20 @@
   margin: 10px;
   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
-
-.res-card{
-  width: 200px;
-  height: 400px;
-  border: 2px solid black;
+.Input-container{
   padding: 10px;
   margin: 5px;
 }
+
+.res-card{
+  width: 200px;
+  height: 350px;
+  border: 2px solid #f0f0f0;
+  padding: 20px;
+  margin: 5px;
+}
 .res-card:hover{
-  border: 1px solid black;
+  border: 1px solid blue;
   cursor: pointer;
 }
 .res
@@ -85,7 +97,29 @@
   display: flex;
   flex-wrap: wrap;
 }
-.filter-btn{
-  margin: 10px;
+
+.shimer-container
+{
+  display: flex;
+  flex-wrap: wrap;
+}
+.shimemr-card {
+  margin: 5px;
+  padding: 20px;
+  width: 200px;
+  height: 350px;
+  background-color:#f0f0f0;
+}
+.Login{
+  padding: 0 20px;
   cursor: pointer;
+}
+.Input-container{
+  display: flex;
+  margin: 5px;
+  padding:5px;
+  align-items: center; 
+}
+.search-btn{
+  margin-right: 10px;
 }
