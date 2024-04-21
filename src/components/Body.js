@@ -33,29 +33,29 @@ const Body = () => {
     // this is another way or conditional rendering (Ternary operator )
   return filteredResObj.length=== 0 ? <Shimmer/> :(
     <>
-    <div className="fi-lter flex">
-        <div className="search m-4 p-4">
-      <input
-          type="text"
-          className='search-btn'
-          placeholder="Enter Your Name"
-          value={searchText}
-          onChange={(e)=>
-            setSearchText(e.target.value)}
-        />
-      <button
-          onClick={()=>{
-            console.log(searchText);
-            const filterdRestro=filteredResObj.filter((res)=>{
-              console.log(res.info.name,"res");
-              return res.info.name.includes(searchText)
-            });
-            setFilteredResObj(filterdRestro);
-          }}
-        >
-          Search
-        </button>
-        </div>
+      <div className="fi-lter flex">
+          <div className="search m-4 p-4">
+        <input
+            type="text"
+            className='search-btn'
+            placeholder="Enter Your Name"
+            value={searchText}
+            onChange={(e)=>
+              setSearchText(e.target.value)}
+          />
+        <button
+            onClick={()=>{
+              console.log(searchText);
+              const filterdRestro=filteredResObj.filter((res)=>{
+                console.log(res.info.name,"res");
+                return res.info.name.includes(searchText)
+              });
+              setFilteredResObj(filterdRestro);
+            }}
+          >
+            Search
+          </button>
+          </div>
 
         </div>
     <div className="rest-container">

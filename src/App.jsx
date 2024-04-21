@@ -7,6 +7,7 @@ import About from './components/About';
 import Contact from './components/Contact';
 import Cart from './components/Cart';
 import Error from './components/Error';
+import Restaurentmenu from './components/Restaurentmenu';
 
 function App() {
   return (
@@ -25,6 +26,8 @@ const AppRouter = () => {
         <Route path="/About" element={<About />} />
         <Route path="/Contact" element={<Contact />} />
         <Route path='/Cart' element={<Cart/>}/>
+        <Route path='/Reastaurent/:resId' element={<Restaurentmenu/>}/>
+        
       </Routes>
     </Router>
   );
